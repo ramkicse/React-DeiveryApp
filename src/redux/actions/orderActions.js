@@ -30,7 +30,7 @@ export const addOrder = ({
         })
 
 // REMOVE_ORDER
-export const removeOrder= ({ id } = {}) => ({
+export const removeOrder= ( id ) => ({
     type: 'REMOVE_ORDER',
     id
 });

@@ -35,6 +35,7 @@ export default (state = filtersReducerDefaultSate, action) => {
                 orderDate: action.orderDate
             }
         case 'SET_ITEM_NAME_FILTER':
+            console.log('item_name :', action.itemName)
             return {
                 ...state,
                 itemName: action.itemName

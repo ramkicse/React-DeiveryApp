@@ -5,10 +5,10 @@ import OrderListItem from './OrderListItem'
 
 const OrderList = (props) => (
 
-    <div className="row">
+    <div className="row" style={{ marginBottom: "20px" }}>
         <div className="col">
             <div className="card">
-                <div className="card-header bg-primary text-white"><i className="fa fa-envelope"></i> Order Details
+                <div className="card-header bg-primary text-white"><i className="fa fa-cart-plus"></i> Order Details
                             </div>
                 <div className="card-body">
 

@@ -5,6 +5,9 @@ import MenuHeader from './MenuHeader'
 import CreateOrder from '../components/CreateOrder'
 import Dashboard from '../components/Dashboard'
 import Footer from './Footer'
+import Help from '../components/Help'
+import Page404 from '../components/Page404'
+import EditOrder from '../components/EditOrder'
 
 const Routers = () =>(
 <BrowserRouter>
@@ -13,9 +16,9 @@ const Routers = () =>(
   <Switch>
     <Route path="/" component={Dashboard} exact={true}/>
     <Route path="/create" component={CreateOrder}/>
-    {/* <Route path="/edit/:id" component={EditExpense}/>
+     <Route path="/edit/:id" component={EditOrder}/>
     <Route path="/help" component={Help}/>
-    <Route component={NotFoundPage} /> */}
+    <Route component={Page404} /> 
   </Switch>
   <Footer/>
   </div>

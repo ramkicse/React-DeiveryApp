@@ -19,9 +19,9 @@ export default (orders, { personName, personMobile, personAddress, orderDate, it
         } else if (sortBy === 'itemPrice') {
             return a.itemPrice < b.itemPrice ? 1 : -1;
         } else if (sortBy === 'personName') {
-            return a.personName < b.personName ? 1 : -1;
+            return a.personName > b.personName ? 1 : -1;
         } else if (sortBy === 'itemName') {
-            return a.itemName < b.itemName ? 1 : -1;
+            return a.itemName > b.itemName ? 1 : -1;
         }
     });
 };

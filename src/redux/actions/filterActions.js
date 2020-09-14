@@ -17,19 +17,19 @@ export const setOrderDateFilter = ({ orderDate }) => ({
 
 
 // SET_ITEM_NAME_FILTER
-export const setItemNameFilter = ({ itemName }) => ({
+export const setItemNameFilter = ( itemName = '') => ({
     type: 'SET_ITEM_NAME_FILTER',
     itemName
 })
 
 // SET_PERSON_MOBILE_FILTER
-export const setPersonMobileFilter = ({ personMobile }) => ({
+export const setPersonMobileFilter = ( personMobile ) => ({
     type: 'SET_PERSON_MOBILE_FILTER',
     personMobile
 })
 
 // SET_PERSON_ADDRESS_FILTER
-export const setPersonAddressFilter = ({ personAddress }) => ({
+export const setPersonAddressFilter = ( personAddress ) => ({
     type: 'SET_PERSON_ADDRESS_FILTER',
     personAddress
 })

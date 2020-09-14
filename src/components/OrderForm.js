@@ -83,16 +83,24 @@ class OrderForm extends Component {
 
 
     render() {
+        const title = this.props.title ? this.props.title : 'Add Delivery Order'
+        const removeButton = this.props.title ? <button onClick={this.props.onRemove} className="btn btn-danger text-right">Remove Order</button> : ''
+        
+        
         return (
 
 
-            <div className="container" style={{width:'60%'}}>
+            <div className="container" style={{ width: '60%' }}>
                 <div className="row">
                     <div className="col">
                         <div className="card">
-                            <div className="card-header bg-primary text-white"><i className="fa fa-envelope"></i> Add Delivery Order
-                </div>
+                            <div className="card-header bg-primary text-white">
+                                <i className="fa fa-plus-circle"></i> {title}
+                            </div>
                             <div className="card-body">
+                                <div className="alert alert-danger">
+                                    {this.state.error && <p>{this.state.error}</p>}
+                                </div>
                                 <form onSubmit={this.onSubmit}>
                                     <div className="form-group">
                                         <label htmlFor="name">Name</label>
@@ -136,7 +144,12 @@ class OrderForm extends Component {
                                         />
                                     </div>
                                     <div className="mx-auto">
-                                        <button type="submit" className="btn btn-primary text-right">Add Delivery Order</button></div>
+                                        <button type="submit" className="btn btn-primary text-right">Add Delivery Order</button>
+
+
+
+                                        {removeButton}
+                                    </div>
                                 </form>
                             </div>
                         </div>

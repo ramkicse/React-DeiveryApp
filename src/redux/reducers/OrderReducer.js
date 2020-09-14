@@ -63,6 +63,7 @@ export default (state = orderReducerDefaultState, action) => {
                 action.order
             ];
         case 'REMOVE_ORDER':
+           
             return state.filter(({ id }) => id !== action.id);
         case 'EDIT_ORDER':
             return state.map((order) => {
