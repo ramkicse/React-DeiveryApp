@@ -1,7 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { setItemNameFilter, setOrderDateFilter, setPersonMobileFilter, setPersonNameFilter, setPersonAddressFilter, sortByItemPrice, sortByPersonName, sortByOrderDate, sortByItemName } from '../redux/actions/filterActions'
-import  DatePicker from 'react-datepicker'
 import moment from 'moment'
 
 
