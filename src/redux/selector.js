@@ -23,7 +23,7 @@ export default (orders, { personName, personMobile, personAddress, orderDate, it
         } else if (sortBy === 'itemName') {
             return a.itemName > b.itemName ? 1 : -1;
         }else{
-            return 1;
+            return 1;   
         }
     });
 };

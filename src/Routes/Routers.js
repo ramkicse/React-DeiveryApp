@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter, Route,Switch} from 'react-router-dom'
+import {HashRouter,  Route,Switch} from 'react-router-dom'
 import MenuHeader from './MenuHeader'
 
 import CreateOrder from '../components/CreateOrder'
@@ -11,7 +11,7 @@ import EditOrder from '../components/EditOrder'
 import OrderSummary from '../components/OrderSummary'
 
 const Routers = () =>(
-<BrowserRouter>
+<HashRouter basename='/'>
   <div>
   <MenuHeader/>
   <Switch>
@@ -24,7 +24,7 @@ const Routers = () =>(
   </Switch>
   <Footer/>
   </div>
-  </BrowserRouter>
+  </HashRouter>
 )
 
 export default Routers
