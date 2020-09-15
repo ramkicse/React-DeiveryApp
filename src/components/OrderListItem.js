@@ -60,6 +60,10 @@ class OrderListItem extends Component {
                     {this.renderIcon({ data: this.props.itemStatus })}
 
                 </td>
+                <td><Link to={`/summary/${this.props.id}`}>
+                <i class="fa fa-print" aria-hidden="true"></i>
+
+                </Link> </td>
 
             </tr>
         )

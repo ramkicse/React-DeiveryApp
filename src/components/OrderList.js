@@ -21,6 +21,7 @@ const OrderList = (props) => (
                                 <th>Price</th>
                                 <th>Qty</th>
                                 <th>Status</th>
+                                <th>Summary</th>
                             </tr>
                         </thead>
                         <tbody>

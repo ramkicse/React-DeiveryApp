@@ -85,7 +85,7 @@ class OrderForm extends Component {
     render() {
         const title = this.props.title ? this.props.title : 'Add Delivery Order'
         const removeButton = this.props.title ? <button onClick={this.props.onRemove} className="btn btn-danger text-right">Remove Order</button> : ''
-        
+        const buttonString = this.props.title ? 'Update the Order' : 'Add Delivery Order'
         
         return (
 
@@ -144,7 +144,7 @@ class OrderForm extends Component {
                                         />
                                     </div>
                                     <div className="mx-auto">
-                                        <button type="submit" className="btn btn-primary text-right">Add Delivery Order</button>
+                                        <button type="submit" className="btn btn-primary text-right">{buttonString}</button>
 
 
 

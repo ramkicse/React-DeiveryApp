@@ -8,6 +8,7 @@ import Footer from './Footer'
 import Help from '../components/Help'
 import Page404 from '../components/Page404'
 import EditOrder from '../components/EditOrder'
+import OrderSummary from '../components/OrderSummary'
 
 const Routers = () =>(
 <BrowserRouter>
@@ -17,6 +18,7 @@ const Routers = () =>(
     <Route path="/" component={Dashboard} exact={true}/>
     <Route path="/create" component={CreateOrder}/>
      <Route path="/edit/:id" component={EditOrder}/>
+     <Route path="/summary/:id" component={OrderSummary}/>
     <Route path="/help" component={Help}/>
     <Route component={Page404} /> 
   </Switch>

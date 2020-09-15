@@ -9,6 +9,7 @@
     "bootstrap": "^4.5.2",
     "indian-number-format": "^1.0.4",
     "moment": "^2.27.0",
+    "num-words": "^1.2.0",
     "numeral": "^2.0.6",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
