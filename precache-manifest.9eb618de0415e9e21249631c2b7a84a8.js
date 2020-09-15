@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dac8eba24144d6a6e754b1c8d3ea085e",
+    "revision": "8bb78a736a618af6392f48053406fd43",
     "url": "/React-DeiveryApp/index.html"
   },
   {
-    "revision": "f335b3b8002d6abf5c91",
+    "revision": "7d91e7a8484434b14efd",
     "url": "/React-DeiveryApp/static/css/2.8aa5a7f8.chunk.css"
   },
   {
-    "revision": "82a170ab0e555dcc1fbf",
+    "revision": "df082de0d685217396da",
     "url": "/React-DeiveryApp/static/css/main.ed1bf982.chunk.css"
   },
   {
-    "revision": "f335b3b8002d6abf5c91",
-    "url": "/React-DeiveryApp/static/js/2.e4688f3b.chunk.js"
+    "revision": "7d91e7a8484434b14efd",
+    "url": "/React-DeiveryApp/static/js/2.4030de5c.chunk.js"
   },
   {
     "revision": "bbee919d8888a17953b5bb98359759ba",
-    "url": "/React-DeiveryApp/static/js/2.e4688f3b.chunk.js.LICENSE.txt"
+    "url": "/React-DeiveryApp/static/js/2.4030de5c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "82a170ab0e555dcc1fbf",
-    "url": "/React-DeiveryApp/static/js/main.d0b8fb8d.chunk.js"
+    "revision": "df082de0d685217396da",
+    "url": "/React-DeiveryApp/static/js/main.203baa23.chunk.js"
   },
   {
     "revision": "eb355381af1b0b2ef26b",
