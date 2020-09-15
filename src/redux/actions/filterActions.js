@@ -10,7 +10,7 @@ export const setPersonNameFilter = (personName = '') => ({
 
 
 // SET_ORDER_DATE_FILTER
-export const setOrderDateFilter = ({ orderDate }) => ({
+export const setOrderDateFilter = ( orderDate ) => ({
     type: 'SET_ORDER_DATE_FILTER',
     orderDate
 })

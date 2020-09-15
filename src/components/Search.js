@@ -1,8 +1,9 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { setItemNameFilter, setOrderDateFilter, setPersonMobileFilter, setPersonNameFilter, setPersonAddressFilter, sortByItemPrice, sortByPersonName, sortByOrderDate, sortByItemName } from '../redux/actions/filterActions'
-import selector from '../redux/selector'
-import OrderListItem from './OrderListItem'
+import  DatePicker from 'react-datepicker'
+import moment from 'moment'
+
 
 const Search = (props) => (
 
@@ -30,10 +31,15 @@ const Search = (props) => (
                             <div className="col">
                                 <form className="form-inline">
                                     <label> Order Date </label> &nbsp;&nbsp;
+                                    {/* <DatePicker onChange={date => props.dispatch(setOrderDateFilter(date))
+                                    }
+                                     /> */}
+
                                     <input className="form-control" type="date" placeholder="Search" aria-label="Search"
                                         onChange={(e) => {
 
-                                            props.dispatch(setOrderDateFilter(e.target.value))
+                                            console.log(moment(e.target.value))
+                                            props.dispatch(setOrderDateFilter(moment(e.target.value)))
                                         }} />
                                 </form>
                             </div>

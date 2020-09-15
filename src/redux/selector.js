@@ -10,7 +10,7 @@ export default (orders, { personName, personMobile, personAddress, orderDate, it
         const personAddressMatch = order.personAddress.toLowerCase().includes(personAddress.toLowerCase());
         const itemNameMatch = order.itemName.toLowerCase().includes(itemName.toLowerCase());
 
-        const orderDateMatch = typeof orderDate !== 'number' || order.orderDate == orderDate;
+        const orderDateMatch = typeof orderDate !== 'number' || order.orderDate >= orderDate;
 
         return personNameMatch && personMobileMatch && personAddressMatch && itemNameMatch && orderDateMatch;
     }).sort((a, b) => {
