@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/React-DeiveryApp/static/css/main.ed1bf982.chunk.css",
+    "main.js": "/React-DeiveryApp/static/js/main.761ceefc.chunk.js",
+    "main.js.map": "/React-DeiveryApp/static/js/main.761ceefc.chunk.js.map",
+    "runtime-main.js": "/React-DeiveryApp/static/js/runtime-main.aece2a1b.js",
+    "runtime-main.js.map": "/React-DeiveryApp/static/js/runtime-main.aece2a1b.js.map",
+    "static/css/2.8aa5a7f8.chunk.css": "/React-DeiveryApp/static/css/2.8aa5a7f8.chunk.css",
+    "static/js/2.ac5c247c.chunk.js": "/React-DeiveryApp/static/js/2.ac5c247c.chunk.js",
+    "static/js/2.ac5c247c.chunk.js.map": "/React-DeiveryApp/static/js/2.ac5c247c.chunk.js.map",
+    "index.html": "/React-DeiveryApp/index.html",
+    "precache-manifest.1d1c51d2519e0af6884725be896faee2.js": "/React-DeiveryApp/precache-manifest.1d1c51d2519e0af6884725be896faee2.js",
+    "service-worker.js": "/React-DeiveryApp/service-worker.js",
+    "static/css/2.8aa5a7f8.chunk.css.map": "/React-DeiveryApp/static/css/2.8aa5a7f8.chunk.css.map",
+    "static/css/main.ed1bf982.chunk.css.map": "/React-DeiveryApp/static/css/main.ed1bf982.chunk.css.map",
+    "static/js/2.ac5c247c.chunk.js.LICENSE.txt": "/React-DeiveryApp/static/js/2.ac5c247c.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/React-DeiveryApp/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.aece2a1b.js",
+    "static/css/2.8aa5a7f8.chunk.css",
+    "static/js/2.ac5c247c.chunk.js",
+    "static/css/main.ed1bf982.chunk.css",
+    "static/js/main.761ceefc.chunk.js"
+  ]
+}
