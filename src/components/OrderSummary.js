@@ -1,7 +1,5 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import OrderList from './OrderList'
-import Search from './Search'
 import numwords from 'num-words'
 
 function OrderSummary(props) {
@@ -90,7 +88,7 @@ function OrderSummary(props) {
 
                                     <tr>
                                         <th>Total:</th>
-                                        <td><blink> <b>{numwords(total).toUpperCase()} RUPEES</b></blink></td>
+                                        <td> <b>{numwords(total).toUpperCase()} RUPEES</b></td>
                                     </tr>
                                 </tbody>
                             </table>

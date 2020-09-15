@@ -67,7 +67,7 @@ export default (state = orderReducerDefaultState, action) => {
             return state.filter(({ id }) => id !== action.id);
         case 'EDIT_ORDER':
             return state.map((order) => {
-                if (order.id == action.id) {
+                if (order.id === action.id) {
                     return {
                         ...order,
                         ...action.updates

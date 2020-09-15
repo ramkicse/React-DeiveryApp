@@ -20,6 +20,7 @@ class OrderForm extends Component {
             orderDate: props.order ? moment(props.order.orderDate) : '',
             itemPrice: props.order ? props.order.itemPrice : '',
             itemQty: props.order ? props.order.itemQty : '',
+            itemStatus: props.order ? props.order.itemStatus : '',
             error: '',
             calendarFocused: false,
         }
@@ -50,9 +51,11 @@ class OrderForm extends Component {
         const itemQty = e.target.value;
         this.setState(() => ({ itemQty }))
     }
-    onFocusChange = ({ focused }) => {
-        this.setState(() => ({ calendarFocused: focused }))
+    onStatusChange = (e) => {
+        const itemStatus = e.target.value;
+        this.setState(() => ({ itemStatus }))
     }
+ 
 
     onSubmit = (e) => {
         e.preventDefault();
@@ -64,6 +67,7 @@ class OrderForm extends Component {
             this.setState(() => (
                 { error: '' }
             ))
+            const status = this.state.itemStatus === ''? OrderStatus.OrderStatus.ORDER_RECEIVED: this.state.itemStatus; 
             this.props.onSubmit({
                 personName: this.state.personName,
                 personMobile: this.state.personMobile,
@@ -72,7 +76,7 @@ class OrderForm extends Component {
                 orderDate: moment(),
                 itemPrice: parseFloat(this.state.itemPrice),
                 itemQty: this.state.itemQty,
-                itemStatus: OrderStatus.OrderStatus.ORDER_RECEIVED
+                itemStatus: status 
 
 
             })
@@ -86,6 +90,23 @@ class OrderForm extends Component {
         const title = this.props.title ? this.props.title : 'Add Delivery Order'
         const removeButton = this.props.title ? <button onClick={this.props.onRemove} className="btn btn-danger text-right">Remove Order</button> : ''
         const buttonString = this.props.title ? 'Update the Order' : 'Add Delivery Order'
+
+        const dropdown =  this.props.title? (<div className="form-group">
+        <label htmlFor="email">Item Status</label>
+        <select className="browser-default custom-select"
+        value={this.state.itemStatus} 
+        onChange={this.onStatusChange} >
+       
+       <option value={OrderStatus.OrderStatus.ORDER_RECEIVED} >{OrderStatus.OrderStatus.ORDER_RECEIVED}</option>
+       <option value={OrderStatus.OrderStatus.ORDER_IN_PROCESS}>{OrderStatus.OrderStatus.ORDER_IN_PROCESS}</option>
+       <option value={OrderStatus.OrderStatus.ORDER_DELIVERED} >{OrderStatus.OrderStatus.ORDER_DELIVERED}</option>
+       <option value={OrderStatus.OrderStatus.ORDER_COMPLETED} >{OrderStatus.OrderStatus.ORDER_COMPLETED}</option>
+       
+
+    </select>
+    </div>) :'';
+
+    console.log('status',this.state.itemStatus)
         
         return (
 
@@ -143,6 +164,8 @@ class OrderForm extends Component {
                                             onChange={this.onItemQtyChange}
                                         />
                                     </div>
+
+                                    {dropdown}
                                     <div className="mx-auto">
                                         <button type="submit" className="btn btn-primary text-right">{buttonString}</button>
 

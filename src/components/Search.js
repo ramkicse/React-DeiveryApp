@@ -93,7 +93,7 @@ const Search = (props) => (
                                             }
                                         }}
                                     >
-                                        <option selected>Choose Sort By</option>
+                                        <option >Choose Sort By</option>
                                         <option value="OrderDate">OrderDate</option>
                                         <option value="Price">Price</option>
                                         <option value="Person Name">Person Name</option>

@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 
 import moment from 'moment'
-import numeral from 'numeral'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import 'bootstrap/dist/css/bootstrap.css'
@@ -61,7 +60,7 @@ class OrderListItem extends Component {
 
                 </td>
                 <td><Link to={`/summary/${this.props.id}`}>
-                <i class="fa fa-print" aria-hidden="true"></i>
+                <i className="fa fa-print" aria-hidden="true"></i>
 
                 </Link> </td>
 
